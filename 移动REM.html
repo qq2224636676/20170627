@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        body{
+            font-size: 20px;
+        }
+        div{
+            width: 16rem;
+            height: 5rem;
+            background: red;
+        }
+    </style>
+    <script type="text/javascript">
+        (function app(win,doc){
+            doc.documentElement.style.fontSize = 20 * doc.documentElement.clientWidth / 320 + 'px';
+            app();
+            win.fontSize(app);
+        })(window,document);
+
+
+    </script>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
